@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Boards</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <header>
+        MY BOARDS
+    </header>
+    <div class="boards-container">
+        <!-- Board 1 -->
+        <div class="board" id="board1">
+            <div class="board-header">To Do</div>
+            <div class="board-tasks">
+                <div class="task">Task 1</div>
+                <div class="task">Task 2</div>
+            </div>
+            <input type="text" class="task-input" placeholder="New Task">
+            <button onclick="addTask('board1')">Add Task</button>
+        </div>
+
+        <!-- Board 2 -->
+        <div class="board" id="board2">
+            <div class="board-header">In Progress</div>
+            <div class="board-tasks">
+                <div class="task">Task 1</div>
+                <div class="task">Task 2</div>
+            </div>
+            <input type="text" class="task-input" placeholder="New Task">
+            <button onclick="addTask('board2')">Add Task</button>
+        </div>
+
+        <!-- Board 3 -->
+        <div class="board" id="board3">
+            <div class="board-header">Done</div>
+            <div class="board-tasks">
+                <div class="task">Task 1</div>
+            </div>
+            <input type="text" class="task-input" placeholder="New Task">
+            <button onclick="addTask('board3')">Add Task</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>

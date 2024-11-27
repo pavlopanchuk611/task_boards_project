@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.boards-container {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+    background-color: #f0f0f0;
+}
+
+.board {
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1;
+    background-color: #444;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.board-header {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.board-tasks {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #666;
+}
+
+.task {
+    background-color: #777;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+    .board {
+        min-width: 100%;
+    }
+}
+
+.task-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
